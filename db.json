@@ -1,0 +1,66 @@
+{
+  "categories": [
+    {
+      "id": 1,
+      "name": "Mobiles",
+      "parent-id": ""
+    },
+    {
+      "id": 2,
+      "name": "Fashion",
+      "parent-id": ""
+    },
+    {
+      "id": 3,
+      "name": "Toys",
+      "parent-id": ""
+    }
+  ],
+  "customers":[
+    {
+      "customer_id":"cust001",
+      "name":"Debashree Ghosh",
+      "dob":"1995-10-10",
+      "address":"Kolkata"
+    }
+  ],
+  "orders":[
+    {
+      "order_id":"ord001",
+      "customer_id":"cust001",
+      "product_id":"pid001",
+      "product_name":"Kolkata",
+      "product_price":9999,
+      "product_qty":1,
+      "amount":9999,
+      "order_date":"2020-10-20"
+    }
+  ],
+  "products":[
+    {
+      "prod_id":"pid001",
+      "name":"poco m2",
+      "sku":"poco001",
+      "price":9999,
+      "category_id":1,
+      "icon":"fa fa-shopping-cart "
+    },
+    {
+      "prod_id":"pid002",
+      "name":"tshirts",
+      "sku":"shirt001",
+      "price":500,
+      "category_id":2,
+      "icon":"fa fa-shopping-cart "
+    },
+    {
+      "prod_id":"pid003",
+      "name":"painting kit",
+      "sku":"paint001",
+      "price":300,
+      "category_id":3,
+      "icon":"fa fa-shopping-cart "
+    }
+  ]
+ 
+}
