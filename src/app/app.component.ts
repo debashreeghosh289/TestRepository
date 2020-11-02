@@ -11,9 +11,13 @@ export class AppComponent {
   constructor(private router:Router) { }
 
   goToProducts(){
-    //this.router.navigateByUrl('/products');
-    console.log("Hello");
     this.router.navigateByUrl( 'products');
     
+ }
+ goToOrders(){
+  this.router.navigateByUrl( 'orders');
+ }
+ goToCustomers(){
+  this.router.navigateByUrl( 'customer');
  }
 }

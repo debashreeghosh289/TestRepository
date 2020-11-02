@@ -1,3 +1,18 @@
+<form>  
+  <mat-form-field appearance="fill">
+    <mat-label>Categories</mat-label>
+    <mat-select [(ngModel)]="selectedValue" name="category" (ngModelChange)="selectCat(selectedValue)">
+      <mat-option value=null>Select
+      </mat-option>
+      <mat-option *ngFor="let cat of categoryList" [value]="cat.id">
+        {{cat.name}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+</form>
+
+
+
 <div class="container">        
     <table class="table">
       <thead>
@@ -6,6 +21,7 @@
           <th>Name</th>
           <th>SKU</th>
           <th>Price</th>
+          <th>Qty</th>
           <th></th>
         </tr>
       </thead>
@@ -15,6 +31,10 @@
           <td>{{product.name}}</td>
           <td>{{product.sku}}</td>
           <td>{{product.price}}</td>
+          <td><select [(ngModel)]="product.qty">
+            <option *ngFor="let qty of quantity" [value]="qty.id">{{qty.name}}</option>
+          </select></td>
+          <!-- <td>{{product.qty}}</td> -->
           <td><button (click)="goToOrders(product)" class="{{product.icon}}"></button></td>
         </tr>
        

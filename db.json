@@ -26,14 +26,14 @@
   ],
   "orders":[
     {
-      "order_id":"ord001",
-      "customer_id":"cust001",
-      "product_id":"pid001",
-      "product_name":"Kolkata",
-      "product_price":9999,
-      "product_qty":1,
-      "amount":9999,
-      "order_date":"2020-10-20"
+      "order_id":"",
+      "customer_id":"",
+      "product_id":"",
+      "product_name":"",
+      "product_price":"",
+      "product_qty":"",
+      "amount":"",
+      "order_date":""
     }
   ],
   "products":[
@@ -43,7 +43,8 @@
       "sku":"poco001",
       "price":9999,
       "category_id":1,
-      "icon":"fa fa-shopping-cart "
+      "icon":"fa fa-shopping-cart ",
+      "qty":1
     },
     {
       "prod_id":"pid002",
@@ -51,7 +52,9 @@
       "sku":"shirt001",
       "price":500,
       "category_id":2,
-      "icon":"fa fa-shopping-cart "
+      "icon":"fa fa-shopping-cart ",
+      "qty":1
+
     },
     {
       "prod_id":"pid003",
@@ -59,7 +62,8 @@
       "sku":"paint001",
       "price":300,
       "category_id":3,
-      "icon":"fa fa-shopping-cart "
+      "icon":"fa fa-shopping-cart ",
+      "qty":1
     }
   ]
  

@@ -1,0 +1,46 @@
+<div class="style_div">
+    <!-- <form class="example-form"> -->
+        <mat-form-field class="example-full-width" style="padding-right: 10px;">
+          <mat-label>Customer Name</mat-label>
+          <input [(ngModel)]="customer.name" name="name"  matInput >
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width"  style="padding-right: 10px;">
+            <mat-label>Date Of Birth</mat-label>
+            <input [(ngModel)]="customer.dob" name="dob"  matInput [matDatepicker]="picker" >
+            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+          </mat-form-field>
+
+        <mat-form-field class="example-full-width" style="padding-right: 10px;">
+          <mat-label>Address</mat-label>
+          <textarea [(ngModel)]="customer.address" name="address" matInput></textarea>
+        </mat-form-field>
+</div>
+        
+<div class="example-button-row style_btn">
+  <button mat-raised-button color="primary" style="float:right;" (click)="addAddress(customer);">Add Address</button>
+</div>
+
+
+
+<div class="container">        
+    <table class="table">
+      <thead>
+        <tr>
+          <!-- <th>Customer Id</th> -->
+          <th>Name</th>
+          <th>Date Of Birth</th>
+          <th>Address</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let customer of customerList">
+          <!-- <td>{{customer.customer_id}}</td> -->
+          <td>{{customer.name}}</td>
+          <td>{{customer.dob| date: 'dd/MM/yyyy'}}</td>
+          <td>{{customer.address}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
